@@ -15,3 +15,8 @@ tests:
     paths:
       - ./output
     expire_in: 1 days
+
+information:
+  stage: info
+  script:
+    - ls
