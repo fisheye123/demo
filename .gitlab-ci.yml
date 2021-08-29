@@ -11,4 +11,7 @@ tests:
   image:
     name: mcr.microsoft.com/playwright:focal
   artifacts:
-    when
+    when: always
+    paths:
+      - ./output
+    expire_in: 1 days
