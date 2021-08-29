@@ -1,0 +1,14 @@
+stages:
+  - test
+  - info
+
+tests:
+  stage: test
+  before_script:
+    - npm install
+  script:
+    - npm run codeceptjs
+  image:
+    name: mcr.microsoft.com/playwright:focal
+  artifacts:
+    when
