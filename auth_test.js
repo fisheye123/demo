@@ -13,6 +13,7 @@ Scenario('test something', async ({ I }) => {
     const profileNameField = page.locator('.user > .dropdown > .dropdown-trigger > .button > .username');
     const usernameField = page.locator('#username');
     await page.goto('https://try.vikunja.io/login');
+    await page.screenshot({path: 'output/src.png'})
     await usernameField.click();
     await usernameField.type('demo');
     await passwordField.click();

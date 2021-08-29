@@ -10,7 +10,7 @@ exports.config = {
   helpers: {
     Playwright: {
       url: 'https://try.vikunja.io/',
-      show: true,
+      show: false, //Turn off the show option if you want to run test in headless mode
       browser: 'chromium'
     }
   },
